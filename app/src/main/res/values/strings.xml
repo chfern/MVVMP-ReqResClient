@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MVVMPReqResClient</string>
+    <string name="api_users_load_error">Error getting users</string>
+    <string name="api_user_load_error">Error Fetching User Data</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_nav_graph"
+    app:startDestination="@id/usersScreen">
+
+    <fragment
+        android:id="@+id/usersScreen"
+        android:name="com.example.mvvmpreqresclient.activity.auth.screen.users.UsersScreen"
+        android:label="UsersScreen" >
+        <action
+            android:id="@+id/action_usersScreen_to_userDetailScreen"
+            app:destination="@id/userDetailScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailScreen"
+        android:name="com.example.mvvmpreqresclient.activity.auth.screen.userdetail.UserDetailScreen"
+        android:label="UserDetailScreen" >
+        <argument
+            android:name="userId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

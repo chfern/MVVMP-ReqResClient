@@ -46,7 +46,6 @@ public class UsersScreen extends BaseScreen {
     @Override
     protected void onViewBound (View view) {
         setupUsersRecyclerView();
-        
         usersPresenter.loadUsers(1);
         addDisposable(usersViewModel.loading()
                 .observeOn(AndroidSchedulers.mainThread())
